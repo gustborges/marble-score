@@ -11,3 +11,11 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+// General setup
+body {
+  background-color: white;
+  h1 {
+    font-size: 2em;
+  }
+}

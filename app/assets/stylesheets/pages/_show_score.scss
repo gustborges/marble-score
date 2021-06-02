@@ -1,0 +1,18 @@
+.score-box {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .total-score {
+    font-size: 5em;
+    color: white;
+    margin-top: 16px;
+  }
+}
+
+.score-description {
+  margin-top: 2em;
+  margin-bottom: 4em;
+}

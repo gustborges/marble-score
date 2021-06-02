@@ -5,7 +5,22 @@ class ScoresController < ApplicationController
     @scores = policy_scope(Score).all
   end
 
-  def show; end
+  def show
+    case @score.total
+    when 0
+      @score.description = "you don't have a score yet"
+      @score_color = "3b3b3b"
+    when 1..60
+      @score.description = "your score is too low. You should study more on this subject. If you need any help, contact your teacher and ask for some help. In the beginning of your studies, it's totally normal to have low scores. Don't give up! Keep moving!"
+      @score_color = "#e13d3d"
+    when 60..80
+      @score.description = "you have a good score but we can think of some improvements. Your teacher will be able to help you through the hardest subjects. Anyway, you are on the right path. Keep moving!"
+      @score_color = "#faed36"
+    when 80..100
+      @score.description = "you have a fantastic score, which is higher than the average. That means you have probably studied a lot. We are very proud. Congratulations!"
+      @score_color = "#14c75e"
+    end
+  end
 
   def new
     @score = Score.new
