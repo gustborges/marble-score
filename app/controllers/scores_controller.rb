@@ -15,7 +15,7 @@ class ScoresController < ApplicationController
       @score_color = "#e13d3d"
     when 60..80
       @score.description = "you have a good score but we can think of some improvements. Your teacher will be able to help you through the hardest subjects. Anyway, you are on the right path. Keep moving!"
-      @score_color = "#faed36"
+      @score_color = "#f2ea04"
     when 80..100
       @score.description = "you have a fantastic score, which is higher than the average. That means you have probably studied a lot. We are very proud. Congratulations!"
       @score_color = "#14c75e"

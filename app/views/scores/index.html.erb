@@ -11,6 +11,7 @@
           <th scope="col">Name</th>
           <th scope="col">Email</th>
           <th scope="col">Score</th>
+          <th scope="col">Edit</th>
         </tr>
       </thead>
       <tbody>
@@ -20,6 +21,7 @@
             <td><%= score.user.name %></td>
             <td><%= score.user.email %></td>
             <td><%= score.total %></td>
+            <td><%= link_to "<i class='far fa-edit'></i>".html_safe, edit_score_path(score) %></td>
           </tr>
         <% end %>
      </tbody>
