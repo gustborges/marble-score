@@ -1,0 +1,9 @@
+<div class="title-container">
+  <h1>Check and update scores</h1>
+</div>
+
+<div class="form-container">
+  <%= @scores.each |score| %>
+    <p><%= score.user.name %> - <%= score.total %></p>
+  <% end %>
+</div>
