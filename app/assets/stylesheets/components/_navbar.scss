@@ -1,12 +1,14 @@
-.navbar-lewagon {
+.navbar-marble {
   justify-content: space-between;
-  background: white;
+  align-items: center;
+  background: $dark-blue;
+  padding-left: 2em;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar-marble .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-marble .navbar-brand img {
+  width: 100px;
 }
