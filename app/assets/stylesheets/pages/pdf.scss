@@ -1,0 +1,32 @@
+.pdf-logo img {
+  text-align: center;
+  width: 90%;
+}
+
+.pdf-header,
+.pdf-info,
+.pdf-score {
+  text-align: center;
+  h1 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2rem;
+    color: rgb(57, 57, 58);
+  }
+  .disclaimer {
+    font-size: 1.4rem;
+  }
+}
+
+.pdf-header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.pdf-score {
+  background-color: rgb(199, 212, 250);
+  border-radius: 3px;
+  padding: 1.6rem;
+  margin-bottom: 3rem;
+}

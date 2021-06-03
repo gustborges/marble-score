@@ -34,6 +34,10 @@ gem 'pundit', '~> 2.1'
 # Authentication
 gem 'devise'
 
+# PDF Generator
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'

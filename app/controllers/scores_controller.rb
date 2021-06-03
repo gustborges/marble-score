@@ -20,6 +20,13 @@ class ScoresController < ApplicationController
       @score.description = "you have a fantastic score, which is higher than the average. That means you have probably studied a lot. We are very proud. Congratulations!"
       @score_color = "#14c75e"
     end
+    respond_to do |format|
+      format.html
+      format.pdf do
+        render pdf: "#{@score.user.name} Score", template: 'scores/score_pdf.html.erb', page_size: "A4",
+               layout: 'pdf', ecoding: 'UTF-8'
+      end
+    end
   end
 
   def new
