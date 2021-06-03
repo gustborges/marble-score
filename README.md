@@ -21,14 +21,14 @@ Admin users can:
 ## Seed:
 - The users below were added to the seed file and you can login with them.
 - For each user you may see different descriptions in the score page, depending on their scores.
-admin@marble.so - admin user
-gustborges@gmail.com - normal user with average score (yellow)
-alexey@marble.so - normal user with high score (green)
-marc@marble.so - normal user with high score (green)
-anna@marble.so - normal user with low score (red)
-julia@marble.so - normal user with no scores added
+- admin@marble.so - admin user
+- gustborges@gmail.com - normal user with average score (yellow)
+- alexey@marble.so - normal user with high score (green)
+- marc@marble.so - normal user with high score (green)
+- anna@marble.so - normal user with low score (red)
+- julia@marble.so - normal user with no scores added
 
-Passwords: marbleso
+## Passwords: marbleso
 
 
 
