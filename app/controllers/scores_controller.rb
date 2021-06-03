@@ -54,7 +54,7 @@ class ScoresController < ApplicationController
   private
 
   def score_find
-    @score = policy_scope(Score).find(params[:id])
+    @score = Score.find(params[:id])
     authorize @score
   end
 
