@@ -8,23 +8,22 @@ class ScoresController < ApplicationController
   def show
     case @score.total
     when 0
-      @score.description = "you don't have a score yet. Have you started your course? If you did and your score is not updated, please send us a note and we will fix it for you."
+      @description = "you don't have a score yet. Have you started your course? If you did and your score is not updated, please send us a message and we will fix that for you."
       @score_color = "gray"
     when 1..50
-      @score.description = "unfortunately your score is too low. We advise you to study this subject a bit more. If you need any help, contact your teacher. In the beginning of your studies it's totally normal to have low scores. Don't give up! Keep moving!"
+      @description = "unfortunately your score is too low. We advise you to study this subject a bit more. If you need any help, contact your teacher. In the beginning of your studies it's totally normal to have low scores. Don't give up! Keep moving!"
       @score_color = "#e13d3d"
     when 51..75
-      @score.description = "you are on the right path. Keep moving! Your score is good, but there is always something to improve, don't you think? If you have any questions, your teacher will be able to help you."
+      @description = "you are on the right path. Keep moving! Your score is good, but there is always something to improve, don't you think? If you have any questions, your teacher will be able to help you."
       @score_color = "#efb104"
     when 76..100
-      @score.description = "you have a fantastic score, which is higher than the average. That means you have probably studied a lot. We are very proud. Congratulations!"
+      @description = "you have a fantastic score, which is higher than the average. That means you have probably studied a lot. We are very proud. Congratulations!"
       @score_color = "#14c75e"
     end
     respond_to do |format|
       format.html
       format.pdf do
-        render pdf: "#{@score.user.name} Score", template: 'scores/score_pdf.html.erb', page_size: "A4",
-               layout: 'pdf', ecoding: 'UTF-8'
+        render pdf: "#{@score.user.name} Score", template: 'scores/score_pdf.html.erb', page_size: "A4", layout: 'pdf'
       end
     end
   end

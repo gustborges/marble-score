@@ -2,19 +2,19 @@
   <h1>Your score is</h1>
 </div>
 
-<div class="text-container row">
+<div class="text-container row score-container">
   <div class="col-12 d-flex justify-content-center">
     <div class="score-box" style="background-color:<%= @score_color if @score_color %>">
       <p class="total-score"><%= @score.total %></p>
     </div>
   </div>
-  <div class="col-12 text-center">
+  <div class="col-12 text-center edit-score">
     <% if current_user.admin %>
       <p><%= link_to "Edit", edit_score_path(@score) %> | <%= link_to "Score list", scores_path %></p>
     <% end %>
   </div>
   <div class="col-12">
-    <p class="score-description"><strong><%= @score.user.name %></strong>, <%= @score.description %></p>
+    <p class="score-description"><strong><%= @score.user.name %></strong>, <%= @description %></p>
   </div>
   <% if @score.total > 0 %>
     <div class="col-12 text-center">

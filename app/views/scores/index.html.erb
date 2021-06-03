@@ -19,7 +19,7 @@
         <% @scores.each do |score| %>
           <tr>
             <th scope="row"><%= score.user.id %></th>
-            <td><%= score.user.name %></td>
+            <td><%= link_to score.user.name, score_path(score) %></td>
             <td><%= score.user.email %></td>
             <td><%= score.total %></td>
             <td><%= link_to "<i class='far fa-edit'></i>".html_safe, edit_score_path(score) %></td>

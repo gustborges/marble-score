@@ -1,3 +1,8 @@
+.score-box,
+.edit-score {
+  max-width: 800px;
+}
+
 .score-box {
   border-radius: 50%;
   width: 10em;
@@ -12,7 +17,12 @@
   }
 }
 
+.edit-score {
+  margin-top: 1em;
+}
+
 .score-description {
+  text-align: center;
   margin-top: 2em;
   margin-bottom: 4em;
 }

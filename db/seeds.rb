@@ -46,11 +46,17 @@ anna = User.create!(
   password: "marbleso"
 )
 
+julia = User.create!(
+  name: "Julia Holter",
+  email: "julia@marble.so",
+  password: "marbleso"
+)
+
 puts "Adding scores"
 
 gustavo_score = Score.create!(
   user_id: gustavo.id,
-  total: 52
+  total: 65
 )
 
 marc_score = Score.create!(
@@ -66,6 +72,11 @@ alexey_score = Score.create!(
 anna_score = Score.create!(
   user_id: anna.id,
   total: 43
+)
+
+julia_score = Score.create!(
+  user_id: julia.id,
+  total: 0
 )
 
 puts "Seeded!"
