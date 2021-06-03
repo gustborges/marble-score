@@ -1,14 +1,14 @@
 <div class="row ml-0 mr-0">
   <div class="col-12 pl-0 pr-0">
     <div class="main-banner">
-      <h1>Fix your customer churn</h1>
-      <p>With Marble you can create customer training and onboarding experiences.</p>
+      <h1>Learning Score</h1>
+      <p>See your performance based on your latest activities.</p>
       <% if current_user && current_user.admin %>
         <%= link_to "Check scores", scores_path, class: "marble-button" %>
       <% elsif current_user %>
-        <%= link_to "Check your score", score_path(@score), class: "marble-button" %>
+          <%= link_to "Check your score", score_path(@score), class: "marble-button" %> 
       <% else %>
-        <%= link_to "Login and check your score", new_user_session_path, class: "marble-button" %>
+        <%= link_to "Check your score", new_user_session_path, class: "marble-button" %>
       <% end %>
     </div>
   </div>

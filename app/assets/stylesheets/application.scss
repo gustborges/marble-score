@@ -19,3 +19,10 @@ body {
     font-size: 2em;
   }
 }
+
+.container-fluid {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

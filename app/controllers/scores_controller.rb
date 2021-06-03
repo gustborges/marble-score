@@ -8,15 +8,15 @@ class ScoresController < ApplicationController
   def show
     case @score.total
     when 0
-      @score.description = "you don't have a score yet"
-      @score_color = "3b3b3b"
-    when 1..60
-      @score.description = "your score is too low. You should study more on this subject. If you need any help, contact your teacher and ask for some help. In the beginning of your studies, it's totally normal to have low scores. Don't give up! Keep moving!"
+      @score.description = "you don't have a score yet. Have you started your course? If you did and your score is not updated, please send us a note and we will fix it for you."
+      @score_color = "gray"
+    when 1..50
+      @score.description = "unfortunately your score is too low. We advise you to study this subject a bit more. If you need any help, contact your teacher. In the beginning of your studies it's totally normal to have low scores. Don't give up! Keep moving!"
       @score_color = "#e13d3d"
-    when 60..80
-      @score.description = "you have a good score but we can think of some improvements. Your teacher will be able to help you through the hardest subjects. Anyway, you are on the right path. Keep moving!"
-      @score_color = "#f2ea04"
-    when 80..100
+    when 51..75
+      @score.description = "you are on the right path. Keep moving! Your score is good, but there is always something to improve, don't you think? If you have any questions, your teacher will be able to help you."
+      @score_color = "#efb104"
+    when 76..100
       @score.description = "you have a fantastic score, which is higher than the average. That means you have probably studied a lot. We are very proud. Congratulations!"
       @score_color = "#14c75e"
     end

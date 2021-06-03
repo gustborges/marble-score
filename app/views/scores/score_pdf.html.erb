@@ -1,10 +1,12 @@
-<div class="pdf-logo">
-  <%= image_tag image_url('marble-header.jpg'), alt: "Marble. Fix your customer churn. Build your own academy." %>
-</div>
+<%= link_to root_path do %>
+  <div class="pdf-logo">
+    <%= image_tag image_url('marble-header.jpg'), alt: "Marble. Fix your customer churn. Build your own academy." %>
+  </div>
+<% end %>
 
 <div class="pdf-header">
-  <h1>Marble Score</h1>
-  <p class="disclaimer">This document shows your total score based on your lastest activities. This will be taken into account to your certification. Before finishing your course, make sure to have a total score of 80 or above.</p>
+  <h1>Learning Score</h1>
+  <p class="disclaimer">This document shows your total score based on your lastest activities. This will be taken into account to your certification. Before finishing your course, make sure you have a total score of 80 or above.</p>
 </div>
 
 <div class="pdf-score">

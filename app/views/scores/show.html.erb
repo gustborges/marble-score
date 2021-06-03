@@ -10,14 +10,16 @@
   </div>
   <div class="col-12 text-center">
     <% if current_user.admin %>
-      <%= link_to "Edit", edit_score_path(@score) %>
+      <p><%= link_to "Edit", edit_score_path(@score) %> | <%= link_to "Score list", scores_path %></p>
     <% end %>
   </div>
   <div class="col-12">
     <p class="score-description"><strong><%= @score.user.name %></strong>, <%= @score.description %></p>
   </div>
-  <div class="col-12 text-center">
-    <%= link_to "<i class='far fa-file-pdf mr-2'></i> Print to PDF".html_safe, score_path(@score, format: :pdf), class: "marble-button"%>
-  </div>
+  <% if @score.total > 0 %>
+    <div class="col-12 text-center">
+      <%= link_to "<i class='far fa-file-pdf mr-2'></i> Print to PDF".html_safe, score_path(@score, format: :pdf), class: "marble-button"%>
+    </div>
+  <% end %>
 </div>
 
