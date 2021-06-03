@@ -27,9 +27,7 @@ Admin users can:
 - marc@marble.so - normal user with high score (green)
 - anna@marble.so - normal user with low score (red)
 - julia@marble.so - normal user with no scores added
-
-## Passwords: marbleso
-
+- All the passwords are "marbleso"
 
 
 
