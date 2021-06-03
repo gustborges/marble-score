@@ -16,7 +16,7 @@
   <div class="col-12">
     <p class="score-description"><strong><%= @score.user.name %></strong>, <%= @description %></p>
   </div>
-  <% if @score.total > 0 %>
+  <% if @score.total > 0 && @score.pdf_enabled %>
     <div class="col-12 text-center">
       <%= link_to "<i class='far fa-file-pdf mr-2'></i> Print to PDF".html_safe, score_path(@score, format: :pdf), class: "marble-button"%>
     </div>

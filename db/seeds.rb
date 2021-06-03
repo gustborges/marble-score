@@ -52,6 +52,12 @@ julia = User.create!(
   password: "marbleso"
 )
 
+yuri = User.create!(
+  name: "Yuri Cooke",
+  email: "yuri@marble.so",
+  password: "marbleso"
+)
+
 puts "Adding scores"
 
 gustavo_score = Score.create!(
@@ -61,22 +67,32 @@ gustavo_score = Score.create!(
 
 marc_score = Score.create!(
   user_id: marc.id,
-  total: 84
+  total: 84,
+  pdf_enabled: true
 )
 
 alexey_score = Score.create!(
   user_id: alexey.id,
-  total: 91
+  total: 91,
+  pdf_enabled: true
+)
+
+yuri_score = Score.create!(
+  user_id: yuri.id,
+  total: 54,
+  pdf_enabled: true
 )
 
 anna_score = Score.create!(
   user_id: anna.id,
-  total: 43
+  total: 43,
+  pdf_enabled: false
 )
 
 julia_score = Score.create!(
   user_id: julia.id,
-  total: 0
+  total: 0,
+  pdf_enabled: false
 )
 
 puts "Seeded!"

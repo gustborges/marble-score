@@ -59,6 +59,6 @@ class ScoresController < ApplicationController
   end
 
   def score_params
-    params.require(:score).permit(:total, :user_id, :description)
+    params.require(:score).permit(:total, :user_id, :description, :pdf_enabled)
   end
 end

@@ -1,6 +1,7 @@
 # Marble Challenge
 
 ## Main gems/plugins added during development
+
 - Devise (authentication)
 - Pundit (authorization)
 - Wicked PDF (pdf generator)
@@ -9,16 +10,20 @@
 - Simple form
 
 ## Expected behaviour
+
 Users can:
+
 - See score page
 - Visualize, save and print PDF with the score
 
 Admin users can:
-- See all the scores and users in a list
-- Generate PDFs
-- Edit scores
 
-## Seed:
+- See all the scores and users in a list
+- Edit scores
+- Allow users to generate PDFs with the score
+
+## Seeds:
+
 - The users below were added to the seed file and you can login with them.
 - For each user you may see different descriptions in the score page, depending on their scores.
 - admin@marble.so - admin user
@@ -27,7 +32,5 @@ Admin users can:
 - marc@marble.so - normal user with high score (green)
 - anna@marble.so - normal user with low score (red)
 - julia@marble.so - normal user with no scores added
+- yuri@marble.so - normal user with average score (yellow)
 - All the passwords are "marbleso"
-
-
-

@@ -6,7 +6,8 @@
   <div class="form-container">
     <%= simple_form_for @score do |f| %>
       <%= f.input :total, label: "Total score", collection: 0..100 %>
-      <%= f.button :submit, "Generate PDF", class: "marble-button" %>
+      <%= f.input :pdf_enabled, label: "Allow user to generate a PDF with the score", as: :boolean %>
+      <%= f.button :submit, "Update Score", class: "marble-button" %>
     <% end %>
   </div>
 </div>
