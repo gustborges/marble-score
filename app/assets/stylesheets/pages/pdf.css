@@ -7,16 +7,20 @@
 .pdf-info,
 .pdf-score {
   text-align: center;
-  h1 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 2rem;
-    color: rgb(57, 57, 58);
-  }
-  .disclaimer {
-    font-size: 1.4rem;
-  }
+}
+
+h1 {
+  font-size: 3rem;
+}
+.pdf-header p,
+.pdf-info p,
+.pdf-score p {
+  font-size: 2rem;
+  color: rgb(57, 57, 58);
+}
+
+.disclaimer {
+  font-size: 1.4rem;
 }
 
 .pdf-header {
